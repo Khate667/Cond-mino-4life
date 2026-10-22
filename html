@@ -1,0 +1,457 @@
+<!DOCTYPE html>
+<html lang="pt" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Condomínio Rosa | Luxo e Exclusividade na Av. Julius Nyerere, Maputo</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['"Plus Jakarta Sans"', 'sans-serif'],
+                    },
+                    colors: {
+                        roseBrand: {
+                            50: '#fff1f2',
+                            100: '#ffe4e6',
+                            600: '#e11d48',
+                            700: '#be123c',
+                            900: '#881337',
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-slate-50 text-slate-800 antialiased">
+
+    <!-- Top Bar de Informações Rápidas -->
+    <div class="bg-slate-900 text-slate-300 text-xs py-2 px-4 hidden md:block border-b border-slate-800">
+        <div class="max-w-7xl mx-auto flex justify-between items-center">
+            <div class="flex items-center space-x-6">
+                <span><i class="fa-solid fa-location-dot text-roseBrand-600 mr-1.5"></i> Av. Julius Nyerere, 4448, Maputo</span>
+                <span><i class="fa-solid fa-phone text-roseBrand-600 mr-1.5"></i> +258 84 000 0000</span>
+                <span><i class="fa-solid fa-envelope text-roseBrand-600 mr-1.5"></i> geral@condominiorosa.co.mz</span>
+            </div>
+            <div class="flex items-center space-x-4">
+                <a href="#portal" class="hover:text-white transition"><i class="fa-solid fa-user-lock mr-1"></i> Área do Condómino</a>
+                <span class="text-roseBrand-600 font-semibold uppercase tracking-wider bg-roseBrand-950/50 px-2 py-0.5 rounded border border-roseBrand-900">Segurança 24h</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- Header / Navbar Principal -->
+    <header id="navbar" class="bg-white/90 backdrop-blur-md shadow-sm sticky top-0 z-50 transition-all duration-300">
+        <div class="max-w-7xl mx-auto px-4 py-4 flex justify-between items-center">
+            <a href="#" class="flex items-center space-x-2.5">
+                <div class="bg-roseBrand-600 text-white p-2 rounded-xl shadow-md">
+                    <i class="fa-solid fa-city text-xl"></i>
+                </div>
+                <div>
+                    <span class="text-xl font-extrabold tracking-tight text-slate-900 block leading-none">CONDOMÍNIO ROSA</span>
+                    <span class="text-[10px] font-bold tracking-widest text-roseBrand-600 uppercase">Maputo • Moçambique</span>
+                </div>
+            </a>
+            
+            <nav class="hidden lg:flex space-x-8 text-sm font-semibold text-slate-600">
+                <a href="#sobre" class="hover:text-roseBrand-600 transition">O Condomínio</a>
+                <a href="#imoveis" class="hover:text-roseBrand-600 transition">Apartamentos</a>
+                <a href="#comodidades" class="hover:text-roseBrand-600 transition">Comodidades</a>
+                <a href="#galeria" class="hover:text-roseBrand-600 transition">Galeria</a>
+                <a href="#localizacao" class="hover:text-roseBrand-600 transition">Localização</a>
+            </nav>
+
+            <div class="hidden sm:flex items-center space-x-4">
+                <a href="https://wa.me/258840000000" target="_blank" class="bg-emerald-600 hover:bg-emerald-700 text-white px-4 py-2.5 rounded-xl text-sm font-semibold shadow-sm transition flex items-center space-x-2">
+                    <i class="fa-brands fa-whatsapp text-base"></i>
+                    <span>WhatsApp</span>
+                </a>
+                <a href="#contacto" class="bg-roseBrand-600 hover:bg-roseBrand-700 text-white px-5 py-2.5 rounded-xl text-sm font-semibold shadow-md transition">
+                    Agendar Visita
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="relative bg-slate-900 text-white min-h-[85vh] flex items-center justify-center bg-cover bg-center px-4" style="background-image: linear-gradient(to bottom, rgba(15, 23, 42, 0.5), rgba(15, 23, 42, 0.85)), url('https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?auto=format&fit=crop&w=1920&q=80');">
+        <div class="max-w-5xl mx-auto text-center z-10 py-20">
+            <span class="inline-block bg-roseBrand-600/90 text-white text-xs uppercase px-4 py-1.5 rounded-full font-bold tracking-widest mb-6 shadow-lg">
+                Avenida Julius Nyerere • Maputo
+            </span>
+            <h1 class="text-4xl sm:text-6xl lg:text-7xl font-extrabold tracking-tight mb-6 leading-tight">
+                O Padrão Máximo de <span class="text-roseBrand-500">Sofisticação</span> Urbana
+            </h1>
+            <p class="text-lg sm:text-xl text-slate-300 max-w-2xl mx-auto mb-10 font-normal leading-relaxed">
+                Desfrute de vistas panorâmicas espetaculares sobre a Baía de Maputo, acabamentos de altíssima qualidade e a segurança que a sua família merece.
+            </p>
+            <div class="flex flex-col sm:flex-row justify-center items-center space-y-4 sm:space-y-0 sm:space-x-4">
+                <a href="#imoveis" class="w-full sm:w-auto bg-roseBrand-600 hover:bg-roseBrand-700 text-white px-8 py-4 rounded-xl font-bold transition shadow-xl text-center">
+                    Ver Unidades Disponíveis
+                </a>
+                <a href="#localizacao" class="w-full sm:w-auto bg-white/10 hover:bg-white/20 backdrop-blur-md text-white border border-white/30 px-8 py-4 rounded-xl font-bold transition text-center">
+                    Ver no Google Maps
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Estatísticas / Highlights de Confiabilidade -->
+    <section class="bg-white border-b border-slate-200 py-10">
+        <div class="max-w-7xl mx-auto px-4 grid grid-cols-2 md:grid-cols-4 gap-6 text-center">
+            <div class="p-4">
+                <div class="text-3xl font-extrabold text-slate-900 mb-1">24/7</div>
+                <div class="text-sm font-medium text-slate-500">Segurança Armada & Portaria</div>
+            </div>
+            <div class="p-4 border-l border-slate-100">
+                <div class="text-3xl font-extrabold text-slate-900 mb-1">100%</div>
+                <div class="text-sm font-medium text-slate-500">Autonomia (Gerador & Água)</div>
+            </div>
+            <div class="p-4 border-l border-slate-100">
+                <div class="text-3xl font-extrabold text-slate-900 mb-1">T2 / T3</div>
+                <div class="text-sm font-medium text-slate-500">Tipologias Amplas de Luxo</div>
+            </div>
+            <div class="p-4 border-l border-slate-100">
+                <div class="text-3xl font-extrabold text-slate-900 mb-1">Prime</div>
+                <div class="text-sm font-medium text-slate-500">Localização Executiva</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Secção Sobre o Condomínio -->
+    <section id="sobre" class="py-24 max-w-7xl mx-auto px-4">
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+            <div>
+                <span class="text-roseBrand-600 font-bold text-xs uppercase tracking-widest bg-roseBrand-50 px-3 py-1 rounded-md">Exclusividade e Prestígio</span>
+                <h2 class="text-3xl sm:text-4xl font-extrabold text-slate-900 mt-4 mb-6 leading-snug">
+                    Um marco arquitetónico na principal artéria de Maputo
+                </h2>
+                <p class="text-slate-600 mb-6 leading-relaxed">
+                    O **Condomínio Rosa** foi idealizado para responder às exigências de executivos, diplomatas e famílias que procuram um estilo de vida cosmopolita sem abdicar da tranquilidade e privacidade. Situado na prestigiada Av. Julius Nyerere, coloca-o perto dos melhores restaurantes, embaixadas e centros de negócios da capital.
+                </p>
+                <div class="space-y-4 mb-8">
+                    <div class="flex items-start space-x-3">
+                        <div class="bg-roseBrand-100 text-roseBrand-600 p-1.5 rounded-lg mt-1"><i class="fa-solid fa-check text-xs"></i></div>
+                        <div>
+                            <h4 class="font-bold text-slate-900">Design Contemporâneo</h4>
+                            <p class="text-sm text-slate-500">Iluminação natural abundante e plantas inteligentemente distribuídas.</p>
+                        </div>
+                    </div>
+                    <div class="flex items-start space-x-3">
+                        <div class="bg-roseBrand-100 text-roseBrand-600 p-1.5 rounded-lg mt-1"><i class="fa-solid fa-check text-xs"></i></div>
+                        <div>
+                            <h4 class="font-bold text-slate-900">Acabamentos Premium</h4>
+                            <p class="text-sm text-slate-500">Materiais importados, pavimentos de alta resistência e isolamento térmico/acústico.</p>
+                        </div>
+                    </div>
+                </div>
+                <a href="#contacto" class="inline-flex items-center font-bold text-roseBrand-600 hover:text-roseBrand-700">
+                    Fale com a Administração Comercial <i class="fa-solid fa-arrow-right ml-2 text-sm"></i>
+                </a>
+            </div>
+            <div class="grid grid-cols-2 gap-4">
+                <img src="https://images.unsplash.com/photo-1512917774080-9991f1c4c750?auto=format&fit=crop&w=600&q=80" alt="Condomínio Rosa Exterior" class="rounded-2xl shadow-lg object-cover h-64 w-full">
+                <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=600&q=80" alt="Sala de Estar Luxuosa" class="rounded-2xl shadow-lg object-cover h-64 w-full mt-8">
+            </div>
+        </div>
+    </section>
+
+    <!-- Secção de Imóveis / Unidades -->
+    <section id="imoveis" class="bg-slate-100 py-24 px-4">
+        <div class="max-w-7xl mx-auto">
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <span class="text-roseBrand-600 font-bold text-xs uppercase tracking-widest bg-white px-3 py-1 rounded-md shadow-sm">Catálogo de Unidades</span>
+                <h2 class="text-3xl sm:text-4xl font-extrabold text-slate-900 mt-4">Apartamentos Disponíveis</h2>
+                <p class="text-slate-600 mt-3">Escolha a tipologia ideal para o seu projeto de vida ou investimento imobiliário.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Card 1: T2 Standard -->
+                <div class="bg-white rounded-3xl overflow-hidden shadow-sm hover:shadow-xl transition border border-slate-200/60 flex flex-col justify-between">
+                    <div>
+                        <div class="relative h-64 overflow-hidden">
+                            <img src="https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?auto=format&fit=crop&w=800&q=80" alt="Apartamento T2" class="w-full h-full object-cover hover:scale-105 transition duration-500">
+                            <span class="absolute top-4 left-4 bg-slate-900/80 backdrop-blur-md text-white text-xs font-bold px-3 py-1.5 rounded-lg">Arrendamento / Venda</span>
+                        </div>
+                        <div class="p-6">
+                            <div class="text-roseBrand-600 text-xs font-bold uppercase tracking-wider mb-1">Tipologia T2</div>
+                            <h3 class="text-2xl font-bold text-slate-900 mb-3">Apartamento T2 Executivo</h3>
+                            <p class="text-slate-600 text-sm mb-6">2 Quartos (1 suíte master), sala de estar ampla com varanda panorâmica, cozinha totalmente equipada e climatização central.</p>
+                            <div class="grid grid-cols-3 gap-2 py-4 border-y border-slate-100 text-center text-xs text-slate-600 font-medium">
+                                <div><i class="fa-solid fa-bed block text-roseBrand-600 text-base mb-1"></i> 2 Quartos</div>
+                                <div><i class="fa-solid fa-bath block text-roseBrand-600 text-base mb-1"></i> 2 WCs</div>
+                                <div><i class="fa-solid fa-ruler-combined block text-roseBrand-600 text-base mb-1"></i> 140 m²</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="p-6 pt-0">
+                        <a href="#contacto" class="block w-full bg-slate-900 hover:bg-roseBrand-600 text-white text-center py-3 rounded-xl font-bold transition text-sm">Consultar Condições</a>
+                    </div>
+                </div>
+
+                <!-- Card 2: T3 Premium -->
+                <div class="bg-white rounded-3xl overflow-hidden shadow-sm hover:shadow-xl transition border border-slate-200/60 flex flex-col justify-between">
+                    <div>
+                        <div class="relative h-64 overflow-hidden">
+                            <img src="https://images.unsplash.com/photo-1560448204-e02f11c3d0e2?auto=format&fit=crop&w=800&q=80" alt="Apartamento T3" class="w-full h-full object-cover hover:scale-105 transition duration-500">
+                            <span class="absolute top-4 left-4 bg-roseBrand-600 text-white text-xs font-bold px-3 py-1.5 rounded-lg">Destaque Exclusivo</span>
+                        </div>
+                        <div class="p-6">
+                            <div class="text-roseBrand-600 text-xs font-bold uppercase tracking-wider mb-1">Tipologia T3</div>
+                            <h3 class="text-2xl font-bold text-slate-900 mb-3">Apartamento T3 Vista Mar</h3>
+                            <p class="text-slate-600 text-sm mb-6">3 Quartos (2 suítes), acabamentos de luxo italianos, zona de serviço independente e estacionamento privativo para 2 viaturas.</p>
+                            <div class="grid grid-cols-3 gap-2 py-4 border-y border-slate-100 text-center text-xs text-slate-600 font-medium">
+                                <div><i class="fa-solid fa-bed block text-roseBrand-600 text-base mb-1"></i> 3 Quartos</div>
+                                <div><i class="fa-solid fa-bath block text-roseBrand-600 text-base mb-1"></i> 3 WCs</div>
+                                <div><i class="fa-solid fa-ruler-combined block text-roseBrand-600 text-base mb-1"></i> 210 m²</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="p-6 pt-0">
+                        <a href="#contacto" class="block w-full bg-slate-900 hover:bg-roseBrand-600 text-white text-center py-3 rounded-xl font-bold transition text-sm">Consultar Condições</a>
+                    </div>
+                </div>
+
+                <!-- Card 3: Penthouse / Cobertura -->
+                <div class="bg-white rounded-3xl overflow-hidden shadow-sm hover:shadow-xl transition border border-slate-200/60 flex flex-col justify-between">
+                    <div>
+                        <div class="relative h-64 overflow-hidden">
+                            <img src="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&w=800&q=80" alt="Penthouse" class="w-full h-full object-cover hover:scale-105 transition duration-500">
+                            <span class="absolute top-4 left-4 bg-amber-600 text-white text-xs font-bold px-3 py-1.5 rounded-lg">Cobertura / Luxo</span>
+                        </div>
+                        <div class="p-6">
+                            <div class="text-roseBrand-600 text-xs font-bold uppercase tracking-wider mb-1">Penthouse</div>
+                            <h3 class="text-2xl font-bold text-slate-900 mb-3">Penthouse Panorâmica</h3>
+                            <p class="text-slate-600 text-sm mb-6">O topo da sofisticação. Terraço privativo com vista a 360 graus sobre a cidade e baía de Maputo, acabamentos sob medida.</p>
+                            <div class="grid grid-cols-3 gap-2 py-4 border-y border-slate-100 text-center text-xs text-slate-600 font-medium">
+                                <div><i class="fa-solid fa-bed block text-roseBrand-600 text-base mb-1"></i> 4 Quartos</div>
+                                <div><i class="fa-solid fa-bath block text-roseBrand-600 text-base mb-1"></i> 5 WCs</div>
+                                <div><i class="fa-solid fa-ruler-combined block text-roseBrand-600 text-base mb-1"></i> 350 m²</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="p-6 pt-0">
+                        <a href="#contacto" class="block w-full bg-slate-900 hover:bg-roseBrand-600 text-white text-center py-3 rounded-xl font-bold transition text-sm">Consultar Condições</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Comodidades / Facilidades -->
+    <section id="comodidades" class="py-24 max-w-7xl mx-auto px-4">
+        <div class="text-center max-w-3xl mx-auto mb-16">
+            <span class="text-roseBrand-600 font-bold text-xs uppercase tracking-widest bg-roseBrand-50 px-3 py-1 rounded-md">Conforto Absoluto</span>
+            <h2 class="text-3xl sm:text-4xl font-extrabold text-slate-900 mt-4">Comodidades de Classe Mundial</h2>
+            <p class="text-slate-600 mt-3">Tudo o que precisa para viver com máxima comodidade sem sair do condomínio.</p>
+        </div>
+
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+            <div class="bg-white p-8 rounded-3xl shadow-sm border border-slate-100 hover:border-roseBrand-200 transition group">
+                <div class="bg-roseBrand-50 text-roseBrand-600 w-14 h-14 rounded-2xl flex items-center justify-center text-2xl mb-6 group-hover:bg-roseBrand-600 group-hover:text-white transition">
+                    <i class="fa-solid fa-shield-halved"></i>
+                </div>
+                <h4 class="text-lg font-bold text-slate-900 mb-2">Segurança Armada 24h</h4>
+                <p class="text-sm text-slate-500">Controle de acessos rigoroso, portaria permanente e circuito fechado de TV.</p>
+            </div>
+
+            <div class="bg-white p-8 rounded-3xl shadow-sm border border-slate-100 hover:border-roseBrand-200 transition group">
+                <div class="bg-roseBrand-50 text-roseBrand-600 w-14 h-14 rounded-2xl flex items-center justify-center text-2xl mb-6 group-hover:bg-roseBrand-600 group-hover:text-white transition">
+                    <i class="fa-solid fa-water-ladder"></i>
+                </div>
+                <h4 class="text-lg font-bold text-slate-900 mb-2">Piscina Panorâmica</h4>
+                <p class="text-sm text-slate-500">Área de lazer com deck e espreguiçadeiras para relaxar nos dias quentes de Maputo.</p>
+            </div>
+
+            <div class="bg-white p-8 rounded-3xl shadow-sm border border-slate-100 hover:border-roseBrand-200 transition group">
+                <div class="bg-roseBrand-50 text-roseBrand-600 w-14 h-14 rounded-2xl flex items-center justify-center text-2xl mb-6 group-hover:bg-roseBrand-600 group-hover:text-white transition">
+                    <i class="fa-solid fa-bolt"></i>
+                </div>
+                <h4 class="text-lg font-bold text-slate-900 mb-2">Gerador & Reserva de Água</h4>
+                <p class="text-sm text-slate-500">Autonomia total contra quaisquer falhas na rede pública da cidade.</p>
+            </div>
+
+            <div class="bg-white p-8 rounded-3xl shadow-sm border border-slate-100 hover:border-roseBrand-200 transition group">
+                <div class="bg-roseBrand-50 text-roseBrand-600 w-14 h-14 rounded-2xl flex items-center justify-center text-2xl mb-6 group-hover:bg-roseBrand-600 group-hover:text-white transition">
+                    <i class="fa-solid fa-square-parking"></i>
+                </div>
+                <h4 class="text-lg font-bold text-slate-900 mb-2">Garagem Subterrânea</h4>
+                <p class="text-sm text-slate-500">Lugares de estacionamento privativos, seguros e de fácil acesso.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Galeria -->
+    <section id="galeria" class="bg-slate-900 text-white py-24 px-4">
+        <div class="max-w-7xl mx-auto">
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <span class="text-roseBrand-500 font-bold text-xs uppercase tracking-widest bg-roseBrand-950 px-3 py-1 rounded-md border border-roseBrand-900">Registo Fotográfico</span>
+                <h2 class="text-3xl sm:text-4xl font-extrabold mt-4">Galeria do Condomínio</h2>
+                <p class="text-slate-400 mt-3">Conheça os detalhes visuais do empreendimento e interiores.</p>
+            </div>
+
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+                <div class="rounded-2xl overflow-hidden h-72 group relative">
+                    <img src="https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?auto=format&fit=crop&w=800&q=80" alt="Fachada" class="w-full h-full object-cover group-hover:scale-110 transition duration-500">
+                    <div class="absolute inset-0 bg-gradient-to-t from-slate-900/80 to-transparent flex items-end p-6">
+                        <span class="font-bold text-sm">Fachada Principal / Av. Julius Nyerere</span>
+                    </div>
+                </div>
+                <div class="rounded-2xl overflow-hidden h-72 group relative">
+                    <img src="https://images.unsplash.com/photo-1600566753376-12c8ab7fb75b?auto=format&fit=crop&w=800&q=80" alt="Cozinha" class="w-full h-full object-cover group-hover:scale-110 transition duration-500">
+                    <div class="absolute inset-0 bg-gradient-to-t from-slate-900/80 to-transparent flex items-end p-6">
+                        <span class="font-bold text-sm">Cozinha Equipada</span>
+                    </div>
+                </div>
+                <div class="rounded-2xl overflow-hidden h-72 group relative">
+                    <img src="https://images.unsplash.com/photo-1584622650111-993a426fbf0a?auto=format&fit=crop&w=800&q=80" alt="Casa de Banho" class="w-full h-full object-cover group-hover:scale-110 transition duration-500">
+                    <div class="absolute inset-0 bg-gradient-to-t from-slate-900/80 to-transparent flex items-end p-6">
+                        <span class="font-bold text-sm">Instalações Sanitárias de Luxo</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Secção Localização Google Maps -->
+    <section id="localizacao" class="py-24 max-w-7xl mx-auto px-4">
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+            <div>
+                <span class="text-roseBrand-600 font-bold text-xs uppercase tracking-widest bg-roseBrand-50 px-3 py-1 rounded-md">Localização Privilegiada</span>
+                <h2 class="text-3xl sm:text-4xl font-extrabold text-slate-900 mt-4 mb-6">No centro de tudo o que importa em Maputo</h2>
+                <p class="text-slate-600 mb-6 leading-relaxed">
+                    Situado na icónica **Avenida Julius Nyerere**, o Condomínio Rosa coloca-o a poucos minutos de embaixadas, zonas corporativas, centros comerciais, escolas de referência e restaurantes de prestígio na capital moçambicana.
+                </p>
+                <div class="bg-slate-100 p-6 rounded-2xl border border-slate-200 mb-6">
+                    <div class="flex items-center space-x-3 text-slate-900 font-bold mb-2">
+                        <i class="fa-solid fa-map-pin text-roseBrand-600"></i>
+                        <span>Endereço Exato</span>
+                    </div>
+                    <p class="text-sm text-slate-600">Avenida Julius Nyerere, 4448, Maputo, Moçambique</p>
+                </div>
+                <a href="https://maps.app.goo.gl/62CUuhk1aXQ8eM849" target="_blank" class="inline-flex items-center bg-roseBrand-600 hover:bg-roseBrand-700 text-white px-6 py-3.5 rounded-xl font-bold shadow-md transition">
+                    <i class="fa-solid fa-location-arrow mr-2"></i> Abrir Direções no Google Maps
+                </a>
+            </div>
+            
+            <div class="bg-slate-200 rounded-3xl overflow-hidden h-[400px] shadow-lg border border-slate-300 flex flex-col items-center justify-center p-8 text-center relative">
+                <!-- Simulador de Mapa Visual Integrado -->
+                <div class="absolute inset-0 bg-cover bg-center opacity-80" style="background-image: url('https://images.unsplash.com/photo-1524661135-423995f22d0b?auto=format&fit=crop&w=1000&q=80');"></div>
+                <div class="absolute inset-0 bg-slate-900/40"></div>
+                <div class="relative z-10 bg-white/95 backdrop-blur-md p-6 rounded-2xl shadow-xl max-w-sm w-full">
+                    <div class="text-roseBrand-600 text-3xl mb-2 animate-bounce"><i class="fa-solid fa-map-marker-alt"></i></div>
+                    <h3 class="font-bold text-slate-900 text-lg">Condomínio Rosa</h3>
+                    <p class="text-xs text-slate-500 mt-1">Av. Julius Nyerere, Maputo</p>
+                    <a href="https://maps.app.goo.gl/62CUuhk1aXQ8eM849" target="_blank" class="mt-4 block bg-roseBrand-600 hover:bg-roseBrand-700 text-white py-2 px-4 rounded-xl text-xs font-bold transition">
+                        Ver Localização no Maps
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portal do Condómino (Simulado) -->
+    <section id="portal" class="bg-slate-100 py-16 border-t border-slate-200">
+        <div class="max-w-4xl mx-auto px-4 text-center">
+            <span class="text-roseBrand-600 font-bold text-xs uppercase tracking-widest bg-white px-3 py-1 rounded-md shadow-sm">Área Restrita</span>
+            <h2 class="text-2xl sm:text-3xl font-extrabold text-slate-900 mt-4 mb-3">Portal do Condómino</h2>
+            <p class="text-slate-600 text-sm mb-8">Espaço exclusivo para residentes gerenciarem quotas, reservas de áreas comuns e ocorrências.</p>
+            <div class="bg-white p-8 rounded-3xl shadow-sm border border-slate-200 max-w-md mx-auto text-left">
+                <form onsubmit="event.preventDefault(); alert('Login simulado com sucesso. Bem-vindo ao Portal!');" class="space-y-4">
+                    <div>
+                        <label class="block text-xs font-bold text-slate-700 uppercase mb-1">Código de Condómino / Email</label>
+                        <input type="text" class="w-full px-4 py-3 rounded-xl border border-slate-200 text-sm focus:outline-none focus:border-roseBrand-600" placeholder="ex: cond104@condominiorosa.co.mz" required>
+                    </div>
+                    <div>
+                        <label class="block text-xs font-bold text-slate-700 uppercase mb-1">Palavra-passe</label>
+                        <input type="password" class="w-full px-4 py-3 rounded-xl border border-slate-200 text-sm focus:outline-none focus:border-roseBrand-600" placeholder="••••••••" required>
+                    </div>
+                    <button type="submit" class="w-full bg-slate-900 hover:bg-roseBrand-600 text-white font-bold py-3 rounded-xl transition text-sm">Entrar no Portal</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Secção Contacto & Visitas -->
+    <section id="contacto" class="py-24 max-w-5xl mx-auto px-4">
+        <div class="bg-white rounded-3xl shadow-xl border border-slate-200 overflow-hidden grid grid-cols-1 lg:grid-cols-12">
+            <div class="lg:col-span-5 bg-slate-900 text-white p-10 flex flex-col justify-between">
+                <div>
+                    <span class="text-roseBrand-500 font-bold text-xs uppercase tracking-widest">Atendimento Comercial</span>
+                    <h3 class="text-3xl font-extrabold mt-3 mb-4">Agende a sua visita presencial</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed mb-8">Nossa equipa comercial está pronta para recebê-lo e apresentar todas as condições especiais de arrendamento e aquisição.</p>
+                </div>
+                <div class="space-y-4 text-sm">
+                    <div class="flex items-center space-x-3 text-slate-300">
+                        <i class="fa-solid fa-phone text-roseBrand-500 w-5"></i>
+                        <span>+258 84 000 0000 / +258 21 000 000</span>
+                    </div>
+                    <div class="flex items-center space-x-3 text-slate-300">
+                        <i class="fa-solid fa-envelope text-roseBrand-500 w-5"></i>
+                        <span>vendas@condominiorosa.co.mz</span>
+                    </div>
+                    <div class="flex items-center space-x-3 text-slate-300">
+                        <i class="fa-solid fa-clock text-roseBrand-500 w-5"></i>
+                        <span>Segunda a Sábado: 08:00 - 18:00</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="lg:col-span-7 p-10">
+                <h4 class="text-2xl font-bold text-slate-900 mb-6">Formulário de Agendamento</h4>
+                <form onsubmit="event.preventDefault(); alert('Solicitação enviada com sucesso! Entraremos em contacto brevemente.');" class="space-y-4">
+                    <div>
+                        <label class="block text-xs font-bold text-slate-700 uppercase mb-1">Nome Completo</label>
+                        <input type="text" class="w-full px-4 py-3 rounded-xl border border-slate-200 text-sm focus:outline-none focus:border-roseBrand-600" placeholder="Insira o seu nome" required>
+                    </div>
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                        <div>
+                            <label class="block text-xs font-bold text-slate-700 uppercase mb-1">Telemóvel / WhatsApp</label>
+                            <input type="tel" class="w-full px-4 py-3 rounded-xl border border-slate-200 text-sm focus:outline-none focus:border-roseBrand-600" placeholder="+258 84..." required>
+                        </div>
+                        <div>
+                            <label class="block text-xs font-bold text-slate-700 uppercase mb-1">Tipologia de Interesse</label>
+                            <select class="w-full px-4 py-3 rounded-xl border border-slate-200 text-sm focus:outline-none focus:border-roseBrand-600 bg-white">
+                                <option>Apartamento T2</option>
+                                <option>Apartamento T3</option>
+                                <option>Penthouse / Cobertura</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div>
+                        <label class="block text-xs font-bold text-slate-700 uppercase mb-1">Mensagem ou Data pretendida</label>
+                        <textarea rows="3" class="w-full px-4 py-3 rounded-xl border border-slate-200 text-sm focus:outline-none focus:border-roseBrand-600" placeholder="Gostaria de agendar para o próximo sábado..."></textarea>
+                    </div>
+                    <button type="submit" class="w-full bg-roseBrand-600 hover:bg-roseBrand-700 text-white font-bold py-3.5 rounded-xl transition shadow-md text-sm">Enviar Solicitação de Visita</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-slate-900 text-slate-400 py-12 border-t border-slate-800 text-sm">
+        <div class="max-w-7xl mx-auto px-4 flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
+            <div class="flex items-center space-x-2">
+                <span class="text-white font-bold tracking-wider">CONDOMÍNIO ROSA</span>
+                <span class="text-slate-600">|</span>
+                <span class="text-xs">Av. Julius Nyerere, Maputo</span>
+            </div>
+            <p class="text-xs text-slate-500">&copy; 2026 Condomínio Rosa. Todos os direitos reservados.</p>
+            <div class="flex space-x-4 text-base">
+                <a href="#" class="hover:text-white transition"><i class="fa-brands fa-facebook"></i></a>
+                <a href="#" class="hover:text-white transition"><i class="fa-brands fa-instagram"></i></a>
+                <a href="#" class="hover:text-white transition"><i class="fa-brands fa-linkedin"></i></a>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
